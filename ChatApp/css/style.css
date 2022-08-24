@@ -1,0 +1,165 @@
+body , html{
+    width : 100%;
+    height: 100%;
+    padding: 0;
+    margin : 0;
+    overflow: hidden;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image : linear-gradient(250deg ,rgb(184, 189, 178), rgb(99, 100, 97));
+}
+
+.google{
+    width:30px;
+    height : 30px;
+}
+.btn{
+    border-radius: 20px;
+}
+
+.top{
+    position :fixed;
+    width: 100%;
+    height : 100px;
+    background-color: rgb(122, 235, 122);
+    z-index :-1;
+}
+
+.chatBox{
+    height: calc(100% - 40px);
+    width : 95%;
+    margin-top: 20px;
+    padding : 0;
+}
+
+.profile-pic{
+    height: 50px;
+    width : 50px;
+}
+
+.search{
+    border-radius: 1rem;
+}
+
+.friend-pic{
+    height: 60px;
+    width : 60px;
+}
+
+@media screen and (max-width: 765px) {
+    .friend-pic{
+        height: 40px;
+        width : 40px;
+    }
+  }
+
+.chat-pic{
+    height: 30px;
+    width : 30px;
+}
+
+.name{
+    font-weight: 400;
+    color : #000;
+}
+
+.recentChat{
+    font-size : 12px;
+    line-height : 15px;
+    max-height : 15px; 
+}
+
+.icon{
+    font-size: 20px;
+    color :lightgray;
+    cursor : pointer;
+}
+
+.chatIcon{
+    height: 330px;
+    width : 300px;
+}
+
+.receive{
+    background-color: rgb(197, 236, 197);
+    border-radius: 1rem;
+    padding : 10px 15px;
+    display: inline-block;
+}
+
+.time{
+    font-size:10px;
+    color :rgb(136, 139, 133);
+    margin-top :2%;
+}
+
+.sent{
+    background-color: rgb(174, 184, 174);
+    border-radius: 1rem;
+    padding : 10px 15px;
+    display: inline-block;
+}
+
+.card{
+    height : 94vh;
+
+}
+
+#messages{
+    overflow-y : scroll;
+    overflow-x : hidden;
+}
+
+#listChat{
+    overflow-y : scroll;
+    overflow-x : hidden;
+}
+
+#profile{
+    border-radius: 30px;
+}
+
+.dropdown-toggle:before{
+    display: none !important;
+}
+
+.dropdown-toggle:after{
+    display: none !important;
+}
+
+@media screen and (max-width: 765px) {
+    .profile-pic {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    #chatArea {
+      margin-left : 15px !important;
+    }
+
+    #contacts{
+        margin-right : 15px !important;
+    }
+  }
+
+#emoji{
+    position : absolute;
+    top : -30vh;
+    background-color : white;
+    border-radius: 10px;
+    
+    box-shadow: rgba(0,0,0,0.16) 0px 3px 6px , rgba(0,0,0,0.23) 0px 3px 6px;
+}
+
+#emoji #myTabContent{
+    height : 22vh;
+    
+}
+
+#myTabContent a{
+    text-decoration: none;
+}
